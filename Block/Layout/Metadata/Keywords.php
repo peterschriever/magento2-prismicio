@@ -8,7 +8,7 @@ use Elgentos\PrismicIO\Block\AbstractTemplate;
 
 class Keywords extends AbstractTemplate
 {
-    protected function _prepareLayout(): Keywords|static
+    protected function _prepareLayout()
     {
         if (!$this->getDocumentResolver()->hasDocument()) {
             return $this;
